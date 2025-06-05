@@ -12,23 +12,11 @@ Este módulo maneja el flujo completo de atención al cliente mediante la gesti�
 
 ## 🖼️ Vista del sistema
 
-![a](static/img/Presentacion/a.png)
-
----
-
-![s](static/img/Presentacion/s.png)
-
----
-
-![d](static/img/Presentacion/d.png)
-
----
-
-![f](static/img/Presentacion/f.png)
-
----
-
-![g](static/img/Presentacion/g.png)
+![a](ModulPQRS/static/img/Presentacion/a.png)
+![s](ModulPQRS/static/img/Presentacion/s.png)
+![d](ModulPQRS/static/img/Presentacion/d.png)
+![f](ModulPQRS/static/img/Presentacion/f.png)
+![g](ModulPQRS/static/img/Presentacion/g.png)
 
 ## ✅ Funcionalidades
 
