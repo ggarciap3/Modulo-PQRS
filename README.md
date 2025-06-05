@@ -10,13 +10,25 @@ Este módulo maneja el flujo completo de atención al cliente mediante la gesti�
 
 ---
 
-## ✅ Imagenes
+## 🖼️ Vista del sistema
 
-image.png
-image.png
-image.png
-image.png
-image.png
+![a](static/img/Presentacion/a.png)
+
+---
+
+![s](static/img/Presentacion/s.png)
+
+---
+
+![d](static/img/Presentacion/d.png)
+
+---
+
+![f](static/img/Presentacion/f.png)
+
+---
+
+![g](static/img/Presentacion/g.png)
 
 ## ✅ Funcionalidades
 
@@ -49,6 +61,11 @@ image.png
 
 ---
 
+## 👨‍💻 Contacto
+
+Nombre: Aron Garcia
+Correo: arongarcia558@gmail.com
+
 ## 🛠️ Configuración
 
 1. Clona el repositorio:
@@ -57,11 +74,4 @@ image.png
 git clone https://tu-repo.com/ModulPQRS.git
 cd ModulPQRS
 
----
-
-## 👨‍💻 Contacto
-
-Nombre: Aron Garcia
-Correo: arongarcia558@gmail.com
----
 ```
