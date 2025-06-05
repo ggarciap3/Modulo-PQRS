@@ -51,8 +51,8 @@ Este módulo maneja el flujo completo de atención al cliente mediante la gesti�
 
 ## 👨‍💻 Contacto
 
-Nombre: Aron Garcia
-Correo: arongarcia558@gmail.com
+- Nombre: Aron Garcia
+- Correo: arongarcia558@gmail.com
 
 ## 🛠️ Configuración
 
