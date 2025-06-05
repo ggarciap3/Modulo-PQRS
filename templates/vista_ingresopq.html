@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Categorias{% endblock %}
+
+{% block content %}
+
+<div class="container grid text-center espacio-container">
+  <div class="row align-items-start">
+    <div class="col-lg-7">
+      <div class="container special-img borde position-relative overflow-hidden ">
+        <img class=" " src="../media/{{verTipospq.imagen}}" style="width:75%" alt="Escenario">
+      </div>
+    </div>
+    <div class="col-lg-5">  
+
+      <hr>
+      
+      <div class="col">
+        TIPO
+        <h4> {{verTipospq.nombre}}</h4>
+      </div>
+      <hr>
+
+      <hr>
+      <div class="col">
+        DESCRIPCION
+        <h4 align="center"> {{verTipospq.descripcion}} </h4>
+      </div>
+      <hr>
+
+    </div>
+  </div>
+  
+  <hr>
+
+  <div class="row align-items-start p-4 bg-#e1f5fe" style="background: linear-gradient(310deg,#bdade0,#59f)">
+    <div class="col">
+      <h3>FORMULARIO QUEJAS Y RECLAMOS </h3>
+      <form action="/registroIngresopqs/{{verTipospq.id}}" method="post" class="row g-3" enctype="multipart/form-data">{% csrf_token %}
+        <div class="form-group col-md-6">
+          <label for="">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control"  required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="">Apellido</label>
+          <input type="text" name="apellido" id="apellido" class="form-control"  required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="">CI/RUC</label>
+          <input type="text" name="ci" id="ci"class="form-control"   maxlength="10" minlength="10"  required> 
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="">Telefono</label>
+          <input type="text" name="telefono" id="telefono" class="form-control" pattern="^[0-9999999999]+" maxlength="10" minlength="10" required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="">Correo</label>
+          <input type="email"  name="correo" id="correo"class="form-control" required>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputFecha" class="form-label">Fecha de compra</label>
+          <input type="date"  name="fecha_compra" id="fecha_compra" class="form-control" required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="lote">Lote</label>
+          <input type="text" name="lote" id="lote" class="form-control" pattern="^[a-zA-Z0-9]{7}$" maxlength="7" minlength="7" required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="">Descripcion</label>
+          <input type="text" name="descrip" id="descrip" class="form-control"  required>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="">Evidencia</label>
+        <input type="file" name="evidencia" id="evidencia" class="form-control mb-3" required >
+    </div>
+
+      <div class="form-group col-md-6">
+          <label for="cantidad">Cantidad</label>
+          <input type="text" name="cantidad" id="cantidad" class="form-control" pattern="^[0-9999999999]+" maxlength="10" minlength="1" required>
+      </div>
+        
+      <div class="form-group col-md-6">
+        <label for="Productos">Productos:</label>
+        <select class="form-control" id="Productos" name="Productos">
+          <option selected disabled>---------------</option> 
+          {% for op in horarioF %}
+                <option value="{{ op.0 }}">{{ op.1 }}</option>
+            {% endfor %}
+      </select>
+    </div>
+
+      <div class="form-group col-md-6">
+
+        <label for="Presentaciones">Presentaciones  :</label>
+        <select class="form-control" id="Presentaciones" name="Presentaciones">
+          <option selected disabled>---------------</option> 
+          {% for op in horarioI %}
+                <option value="{{ op.0 }}">{{ op.1 }}</option>
+            {% endfor %}
+        </select>
+    </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
